@@ -62,7 +62,7 @@ This project identifies which customers are at risk of leaving and outlines the 
 
 ## Visuals
 
-!\[](https://github.com/christiannugal-lab/Customer-Churn-Analysis-Project/blob/main/outputs/Customer%20Churn%20Dashboard.png)
+![](https://github.com/christiannugal-lab/Customer-Churn-Analysis-Project/blob/main/outputs/Customer%20Churn%20Dashboard.png)
 
 
 
