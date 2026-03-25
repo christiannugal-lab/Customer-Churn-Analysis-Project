@@ -1,8 +1,8 @@
-\# Customer Churn \& Retention Analysis \[INCOMPLETE]
+# Customer Churn & Retention Analysis [INCOMPLETE]
 
 
 
-\## Business Problem
+## Business Problem
 
 This telecommunications business experiences high customer churn, resulting in potential revenue loss. The management team suspects that customer churn, discounting strategies, and product mix are impacting long-term profitability but has failed to identify the underlying drivers.
 
@@ -12,9 +12,9 @@ The following assessment explores key business questions, such as:
 
 
 
-* Diagnosing cost drivers
-* Identifying loss-making segments
-* Recommended profit optimisation strategies
+- Diagnosing cost drivers
+- Identifying loss-making segments
+- Recommended profit optimisation strategies
 
 
 
@@ -22,51 +22,51 @@ This project identifies which customers are at risk of leaving and outlines the 
 
 
 
-\## Dataset
+## Dataset
 
-* Source: https://www.kaggle.com/datasets/yeanzc/telco-customer-churn-ibm-dataset/data
-* Size/shape: Rows \[7,043] x Columns \[33] ⇒ Total Elements \[232,419]
-* Key fields: CustomerID
-
-
-
-\## Tools Used
-
-* SQL
-* Excel
-* Tableau
+- Source: https://www.kaggle.com/datasets/yeanzc/telco-customer-churn-ibm-dataset/data
+- Size/shape: Rows \[7,043] x Columns \[33] ⇒ Total Elements \[232,419]
+- Key fields: CustomerID
 
 
 
-\## Approach
+## Tools Used
+
+- SQL
+- Excel
+- Tableau
+
+
+
+## Approach
 
 1. Clean and transform raw customer data using SQL
-- Handled data type inconsistencies and cleaned non-numeric values using SQL REGEX before type conversion
+  - Handled data type inconsistencies and cleaned non-numeric values using SQL REGEX before type conversion
 2. Designed churn indicators and customer lifetime metrics
 3. Analysed behavioural patterns leading to churn
 4. Created Tableau dashboards to track retention KPIs
 
 
 
-\## Key Insights
+## Key Insights
 
 
 
 
 
-\## Recommendations
+## Recommendations
 
 
 
 
 
-\## Visuals
+## Visuals
 
 
 
 
 
-\### updates
+### updates
 
 
 
