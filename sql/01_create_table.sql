@@ -1,0 +1,38 @@
+CREATE DATABASE churn_analysis;
+USE churn_analysis;
+
+CREATE TABLE `customers` (
+  `CustomerID` varchar(50) DEFAULT NULL,
+  `CustomerCount` int DEFAULT NULL,
+  `Country` varchar(100) DEFAULT NULL,
+  `State` varchar(100) DEFAULT NULL,
+  `City` varchar(100) DEFAULT NULL,
+  `Zip_Code` varchar(20) DEFAULT NULL,
+  `Lat_Long` text,
+  `Latitude` double DEFAULT NULL,
+  `Longitude` double DEFAULT NULL,
+  `Gender` varchar(10) DEFAULT NULL,
+  `Senior_Citizen` varchar(5) DEFAULT NULL,
+  `Partner` varchar(10) DEFAULT NULL,
+  `Dependents` varchar(10) DEFAULT NULL,
+  `Tenure_Months` int DEFAULT NULL,
+  `Phone_Service` varchar(10) DEFAULT NULL,
+  `Multiple_Lines` varchar(30) DEFAULT NULL,
+  `Internet_Service` varchar(50) DEFAULT NULL,
+  `Online_Security` varchar(30) DEFAULT NULL,
+  `Online_Backup` varchar(30) DEFAULT NULL,
+  `Device_Protection` varchar(30) DEFAULT NULL,
+  `Tech_Support` varchar(30) DEFAULT NULL,
+  `Streaming_TV` varchar(30) DEFAULT NULL,
+  `Streaming_Movies` varchar(30) DEFAULT NULL,
+  `Contract` varchar(50) DEFAULT NULL,
+  `Paperless_Billing` varchar(10) DEFAULT NULL,
+  `Payment_Method` varchar(50) DEFAULT NULL,
+  `Monthly_Charges` double DEFAULT NULL,
+  `Total_Charges` decimal(10,2) DEFAULT NULL,
+  `Churn_Label` varchar(10) DEFAULT NULL,
+  `Churn_Value` int DEFAULT NULL,
+  `Churn_Score` int DEFAULT NULL,
+  `CLTV` double DEFAULT NULL,
+  `Churn_Reason` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
