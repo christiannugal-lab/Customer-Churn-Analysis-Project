@@ -76,7 +76,7 @@ SELECT 'Payment_Method', Payment_Method, AVG(churn_flag)
 FROM compact_churn_analysis
 GROUP BY Payment_Method;
 
--- DROP TABLE compact_churn_analysis;
+DROP TABLE IF EXISTS compact_churn_analysis;
 
 CREATE TABLE compact_churn_analysis AS
 SELECT
@@ -89,5 +89,22 @@ SELECT
     Online_Security,
     Internet_Service,
     Payment_Method,
-    churn_flag
+    churn_flag,
+    
+    -- revenue lost metric for churned customers
+    CASE
+		WHEN churn_flag = 1 THEN Total_Charges
+        ELSE 0
+	END AS revenue_lost,
+    
+    -- customer lifetime value as a proxy
+    Monthly_Charges * Tenure_Months AS CLTV,
+    
+    -- Tenure grouping for segmentation
+    CASE
+		WHEN Tenure_Months < 12 THEN 'New'
+        WHEN Tenure_Months < 24 THEN 'Mid-term'
+        ELSE 'Loyal'
+    END AS tenure_group
+    
 FROM customers;
